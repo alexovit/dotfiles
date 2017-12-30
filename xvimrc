@@ -1,0 +1,9 @@
+imap jk <Esc>
+nnoremap J i<CR><Esc>0
+nnoremap K kJx
+
+set incsearch
+set ignorecase
+set smartcase
+set gdefault
+set pasteboard

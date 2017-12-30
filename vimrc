@@ -10,7 +10,7 @@
 "   03. Theme/Colors ............ Colors, fonts, etc.                        "
 "   04. Vim UI .................. User interface behavior                    "
 "   05. Text Formatting/Layout .. Text, tab, indentation related             "
-"   06. Custom Commands ......... Any custom command aliases                 "
+"   06. Remap ................... Any custom command aliases                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -89,8 +89,9 @@ set smarttab              " use tabs at the start of a line, spaces elsewhere
 set nowrap                " don't wrap text
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 06. Custom Commands                                                        "
+" 06. Remap
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Prettify JSON files making them easier to read
-command PrettyJSON %!python -m json.tool
+imap jk <Esc>
+nnoremap J i<CR><Esc>0
+nnoremap K kJ
+nnoremap <CR> G

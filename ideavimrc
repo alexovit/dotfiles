@@ -1,0 +1,4 @@
+imap jk <Esc>
+nnoremap J i<CR><Esc>0
+nnoremap K kJ
+nnoremap <CR> G
