@@ -80,7 +80,7 @@ alias ga='git add '
 alias gb='git branch '
 alias gc='git commit'
 alias gd='git diff'
-alias go='git checkout '
+alias gco='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
 alias got='git '
@@ -108,3 +108,10 @@ qfind () {
 if [ -f /usr/bin/vim ]; then
   export EDITOR=/usr/bin/vim
 fi
+# Go paths
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/.go
+export PATH=$PATH:/usr/local/go/bin
+# Java paths
+export JAVA_HOME=/usr/local/java/jdk-9.0.4
+export PATH=$PATH:/usr/local/java/jdk-9.0.4/bin
